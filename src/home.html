@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REVAMP TBN</title>
+    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <link rel="shortcut icon" href="../assets/logo 1.svg" type="image/x-icon" />
+  </head>
+  <body class="font-popins">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="px-8 py-2 md:py-1 bg-transparent fixed w-full font-jakarta z-50 shadow-lg"
+    >
+      <div class="flex items-center justify-between">
+        <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
+          <a href="../src/home.html"
+            ><img src="../assets/logo nav.svg" alt="logo navbar"
+          /></a>
+        </span>
+
+        <div class="lg:flex hidden gap-6 mt-2 mb-2 mr-5">
+          <ul
+            class="hidden mt-2 item-center space-x-10 lg:mr-20 text-white font-semibold tracking-wide md:flex"
+          >
+            <a href="../src/home.html"><li>Home</li></a>
+            <a href="../src/about.html"><li>About Us</li></a>
+            <a href="../src/blog.html"><li>Blog</li></a>
+            <a href="../src/contact.html"><li>Contact Us</li></a>
+          </ul>
+
+          <a
+            href="../src/login.html"
+            class="border-2 px-8 py-2 rounded-lg font-bold font-xs text-hijau border-hijau"
+            >JOIN</a
+          >
+        </div>
+        <button class="w-16 lg:hidden block buttonToogle">
+          <img src="../assets/menu1.svg" alt="Menu" />
+        </button>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="Mobilemenu hidden">
+        <ul class="text-sm font-bold gap-6 bg-background z-10">
+          <a href="../src/home.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300 z-10"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              About Us
+            </li></a
+          >
+          <a href="../src/blog.html"
+            ><li
+              class="py-4 px-6 ml-4 md:ml-0 lg:px-20 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Blog
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Contact Us
+            </li></a
+          >
+        </ul>
+
+        <div class="gap-6 mt-2 mb-2">
+          <button
+            class="border px-1 py-3 rounded-md font-bold font-xs bg-hijau w-full"
+          >
+            LOGIN
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.scrollY > 600) {
+          navbar.classList.add("bg-biru");
+        } else {
+          navbar.classList.remove("bg-biru");
+        }
+      });
+    </script>
+
+    <!-- END NAVBAR -->
+
+    <!-- HOME PAGE -->
+    <section
+      id="home"
+      class="bg-[url('../assets/navbar.svg')] bg-cover bg-center relative"
+    >
+      <div
+        class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-white"
+      >
+        <h1
+          class="text-[30px] md:text-[56px] font-bold text-center leading-tight md:leading-normal"
+        >
+          Transforming Businesses, Transforming the World With TBN Alliance!
+        </h1>
+        <h1
+          class="font-semibold text-[15px] md:text-[27px] text-center leading-tight md:leading-normal mt-7 md:mt-8"
+        >
+          TBN Alliance invites you to be part of a vibrant community geared
+          towards success! Together, we can create opportunities, expand
+          networks, and achieve remarkable feats. Let's make dreams happen
+          together!
+        </h1>
+      </div>
+    </section>
+    <!-- END HOME PAGE -->
+
+    <!-- ABOUT TBN -->
+    <section
+      id="about"
+      class="bg-[url('../assets/baner1.svg')] bg-cover bg-center relative"
+    >
+      <div
+        class="max-w-[1200px] min-h-[100vh] py-24 flex flex-col md:flex-row items-center justify-center mx-auto px-4"
+      >
+        <img
+          src="../assets/content video.svg"
+          alt="ini video"
+          class="w-full md:w-1/2 md:max-w-md mx-auto md:mr-12"
+        />
+        <div class="md:w-1/2 text-white md:mb-8">
+          <h1
+            class="text-2xl md:text-4xl font-bold mb-4 mt-5 text-center md:text-start"
+          >
+            About TBN Alliance
+          </h1>
+          <p class="text-sm md:text-base">
+            The business world is currently experiencing a significant
+            transformation. Consumers, investors and regulators are increasingly
+            demanding that companies operate sustainably, taking into account
+            their impact on the environment and society.
+          </p>
+          <p class="text-sm md:text-base mt-4">
+            The Transformational Business Network (TBN) Alliance is a global
+            community of visionary business leaders committed to building a more
+            sustainable and profitable future. We pioneer innovative solutions
+            that empower companies to thrive while minimizing their
+            environmental impact.
+          </p>
+          <a href=""
+            ><button
+              class="border-2 border-hijau text-hijau p-2 rounded-[16px] mt-4 hover:bg-slate-400 duration-300"
+            >
+              LEARN MORE
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- END CONTENT ABOUT -->
+
+    <!-- CONTENT WHAT WE DO -->
+    <section
+      id="about"
+      class="bg-[url('../assets/baner2.svg')] bg-cover bg-center relative"
+    >
+      <div class="py-5 max-w-7xl mx-auto px-4">
+        <h1
+          class="text-3xl md:text-[34px] lg:text-5xl font-semibold text-center mb-10 md:py-5 lg:mb-4"
+        >
+          WHAT WE DO
+        </h1>
+        <p
+          class="text-lg md:text-[17px] text-center md:text-base lg:text-2xl mb-4 md:w-[1202px] md:mt-10"
+        >
+          The Alliance leverages the particular strengths of our partners,
+          establishing a global platform and resource hub capable of scaling a
+          distinctive model of economic and community development with a proven
+          record of transformational impact.
+        </p>
+        <p class="text-lg md:text-xl lg:text-2xl text-center mb-4">
+          Tapping the power of business, our solutions focus on:
+        </p>
+
+        <div class="flex flex-col md:flex-row items-center justify-center mb-4">
+          <img
+            src="../assets/what1.svg"
+            alt=""
+            class="w-full md:w-auto md:max-w-[45%] md:mr-4 mb-4 md:mb-0"
+          />
+          <img
+            src="../assets/what2.svg"
+            alt=""
+            class="w-full md:w-auto md:max-w-[45%]"
+          />
+        </div>
+
+        <div
+          class="text-lg md:text-[17px] lg:text-2xl mt-10 font-normal md:w-[1162px]"
+        >
+          <p>
+            The TBN Alliance provides an environment for purpose-driven
+            enterprises to flourish so they may be catalysts for reducing
+            poverty and stewarding environmental sustainability. We do this by
+            fostering a social movement for good that produces tangible results,
+            helping social entrepreneurs thrive, and directly influencing the
+            well-being of families and communities.
+          </p>
+          <p class="mt-4">
+            Our goal is lofty! We seek to catalyze an impact movement - people
+            across the globe who are passionate about leveraging the power of
+            business for the greater good, for true social transformation,
+            geared especially towards support of SMEs in frontier and emerging
+            markets.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- END CONTENT WHAT WE DO -->
+
+    <!-- WHY CHOOSE US -->
+    <section
+      id="choose"
+      class="bg-[url('../assets/baner3.svg')] bg-cover bg-center relative"
+    >
+      <div
+        class="flex flex-col md:flex-row py-20 justify-center items-center max-w-[1200px] mx-auto px-4 md:gap-[150px]"
+      >
+        <div class="md:mr-8">
+          <h1
+            class="text-2xl md:text-4xl lg:text-5xl font-extrabold md:py-10 text-white"
+          >
+            Why choose us?
+          </h1>
+          <div class="flex flex-row md:flex-row items-center mb-6">
+            <div class="mb-4">
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+              <img src="../assets/cek.svg" alt="" class="w-6 h-6 mr-2 mt-4" />
+            </div>
+            <div class="text-[21px] font-semibold text-white lg:py-10 py-8">
+              <p class="text-sm md:text-base py-2">Extensive Network Access</p>
+              <p class="text-sm md:text-base py-2">
+                Cutting-Edge & Practical Solutions
+              </p>
+              <p class="text-sm md:text-base py-2">Competitive Advantage</p>
+              <p class="text-sm md:text-base py-2">
+                Enhanced Brand Reputation.
+              </p>
+              <p class="text-sm md:text-base py-2">Experience and Expertise</p>
+              <p class="text-sm md:text-base py-2">
+                Adaptability and Innovation
+              </p>
+            </div>
+          </div>
+          <button
+            class="border-2 rounded-2xl py-3 px-16 bg-green-600 text-white"
+          >
+            JOIN NOW
+          </button>
+        </div>
+        <img src="../assets/image choose.svg" alt="" class="mt-8 md:mt-0" />
+      </div>
+    </section>
+    <!-- END WHY CHOOSE US -->
+
+    <!-- Recent Blog Post -->
+    <section class="bg-background">
+      <div class="mx-4 md:mx-20 py-4 md:py-10">
+        <div class="flex flex-row justify-between">
+          <h1 class="text-[20px] md:text-[27px] font-semibold">
+            Recent blog posts
+          </h1>
+          <p class="text-[14px] md:text-[17px] font-normal">View All</p>
+        </div>
+
+        <div class="flex flex-col md:flex-row">
+          <div class="md:mr-4">
+            <p class="text-[12px] md:text-[13px] font-normal mt-2">
+              Mitra Keluarga • 23 April 2024
+            </p>
+            <img
+              src="../assets/recent1.svg"
+              class="w-full md:w-[592px] h-[228px] rounded-xl mt-2 md:mt-0"
+              alt=""
+            />
+            <h1 class="text-[20px] md:text-[27px] font-semibold mt-4 md:mt-5">
+              Apakah kalian tahu apa itu TBC ?
+            </h1>
+            <span class="text-[14px] md:text-[17px] font-normal text-gray-600"
+              >Tuberkulosis (TBC) adalah penyakit menular yang disebabkan oleh
+              infeksi bakteri Mycobacterium tuberculosis yang menyerang organ
+              paru-paru.</span
+            >
+            <div class="flex flex-row mt-4 md:mt-5 gap-4">
+              <p
+                class="text-[12px] md:text-[14px] font-normal text-purple-800 border-transparent bg-purple-100 rounded-2xl px-2"
+              >
+                Article
+              </p>
+              <p
+                class="text-[12px] md:text-[14px] font-normal text-blue-700 border-transparent bg-blue-100 rounded-2xl px-2"
+              >
+                Research
+              </p>
+              <p
+                class="text-[12px] md:text-[14px] font-normal text-pink-700 border-transparent bg-pink-100 rounded-2xl px-2"
+              >
+                Health
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-4 md:mt-0">
+            <div class="flex flex-row gap-4">
+              <img src="../assets/coba2.svg" alt="" class="w-1/3 md:w-auto" />
+              <div>
+                <p class="text-[12px] md:text-[13px] font-normal">
+                  Tyas Ayu Kistiani • 29 Desember 2022
+                </p>
+                <h1
+                  class="text-[20px] md:text-[17px] font-normal text-black mt-3"
+                >
+                  Kisah Inspiratif Penyintas TBC untuk Semangat Sembuh Melawan
+                  TBC
+                </h1>
+                <p
+                  class="text-[12px] md:text-[14px] font-normal text-gray-600 mt-2"
+                >
+                  Ardiansyah, beliau biasa dipanggil Mas Ardi merupakan salah
+                  satu mantan pasien TBC RO.
+                </p>
+                <div class="flex flex-row mt-4 md:mt-10 gap-4">
+                  <p
+                    class="text-[12px] md:text-[14px] font-normal text-blue-700 border-transparent bg-blue-100 rounded-2xl px-2"
+                  >
+                    health
+                  </p>
+                  <p
+                    class="text-[12px] md:text-[14px] font-normal text-pink-700 border-transparent bg-pink-100 rounded-2xl px-2"
+                  >
+                    health
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <div class="flex flex-row gap-4">
+                <img src="../assets/coba3.svg" alt="" class="w-1/3 md:w-auto" />
+                <div>
+                  <p class="text-[12px] md:text-[13px] font-normal">
+                    Felicia Gisela Br Sihite • 20 Mei 2023
+                  </p>
+                  <h1
+                    class="text-[20px] md:text-[17px] font-normal text-black mt-3"
+                  >
+                    Tips Menjaga Kesehatan Paru-Paru
+                  </h1>
+                  <p
+                    class="text-[12px] md:text-[14px] font-normal text-gray-600 mt-2"
+                  >
+                    Paru-paru merupakan salah satu organ penting yang tidak
+                    tergantikan di tubuh, sehingga harus dijaga.
+                  </p>
+                  <div class="flex flex-row mt-4 md:mt-14 gap-4">
+                    <p
+                      class="text-[12px] md:text-[14px] font-normal text-blue-700 border-transparent bg-blue-100 rounded-2xl px-2"
+                    >
+                      health
+                    </p>
+                    <p
+                      class="text-[12px] md:text-[14px] font-normal text-pink-700 border-transparent bg-pink-100 rounded-2xl px-2"
+                    >
+                      health
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Recent Blog Post -->
+
+    <!-- Image Baner -->
+    <div class="bg-white">
+      <img src="../assets/baner4.svg" class="flex mx-auto py-24 w-50" alt="" />
+    </div>
+    <!-- end image baner -->
+
+    <!-- CONTACT -->
+    <section class="bg-white">
+      <div class="flex justify-center items-center">
+        <div id="contact" class="md:container mx-auto p-4 md:ml-32">
+          <h1 class="text-2xl font-bold mb-4">Contact Us</h1>
+          <h1 class="text-stone-700 text-[13px] font-normal">
+            Feel free to contact us any time. we will get back to you as soon as
+            we can!
+          </h1>
+          <form action="#" method="POST" class="space-y-4 mt-10">
+            <div>
+              <label
+                for="full_name"
+                class="block text-sm font-medium text-gray-700"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                id="full_name"
+                name="full_name"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+              />
+            </div>
+            <div>
+              <label for="email" class="block text-sm font-medium text-gray-700"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+              />
+            </div>
+            <div>
+              <label
+                for="message"
+                class="block text-sm font-medium text-gray-700"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[250px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+              ></textarea>
+            </div>
+            <div>
+              <button
+                type="submit"
+                class="inline-flex items-center justify-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-white bg-hijau hover:bg-green-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <div id="info" class="hidden md:flex mr-[307px]">
+          <img src="../assets/info2.svg" alt="" />
+          <img src="../assets/info1.svg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <section class="bg-white mt-10">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+        <div class="w-full md:w-[400px] mb-5 md:mb-0">
+          <img src="../assets/logo footer.svg" alt="" />
+          <p
+            class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins"
+          >
+            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            tujuan, investor dampak, dan pembangun kapasitas yang mengambil
+            pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
+            berpenghasilan rendah dan kurang terlayani.
+          </p>
+        </div>
+
+        <div class="flex flex-col mt-5">
+          <h1 class="text-[21px] md:text-lg font-semibold font-popins">
+            LOKASI
+          </h1>
+          <p
+            class="text-[18px] md:text-base font-normal font-popins mt-3 md:mt-5"
+          >
+            Jl. M.H.Thamrin No.20, Menteng
+          </p>
+          <p class="text-[18px] md:text-base font-normal font-popins">
+            Jakarta Pusat 10350, Indonesia
+          </p>
+        </div>
+
+        <div>
+          <h1
+            class="font-popins font font-semibold text-[21px] md:text-lg mt-2"
+          >
+            Perusahaan
+          </h1>
+          <div
+            class="flex flex-col font-popins font-normal text-[18px] md:text-base mt-3 md:mt-5"
+          >
+            <a href="about.html">About Us</a>
+            <a href="blog.html" class="py-2">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+            Ikuti Social Media Kami
+          </h1>
+          <div class="flex gap-3 md:gap-[20px] py-5">
+            <a href="https://www.instagram.com/tbn.indonesia/"
+              ><img src="../assets/nav-instagram.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com/@tbnindonesia902"
+              ><img src="../assets/nav-youtube.svg" alt=""
+            /></a>
+            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+          </div>
+          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+            Hubungi Kami
+          </h1>
+          <div class="flex gap-1 mt-2">
+            <img
+              src="../assets/icon email.svg"
+              class="font-popins font-normal text-[17px]"
+              alt=""
+            />
+            <a href="">hello@tbnalliance.org</a>
+          </div>
+        </div>
+      </div>
+      <img src="../assets/end footer.svg" class="w-full" alt="" />
+    </section>
+
+    <!-- END FOOTR -->
+    <script src="../src/scrollnavbar.js"></script>
+    <script src="../src/script.js"></script>
+  </body>
+</html>
