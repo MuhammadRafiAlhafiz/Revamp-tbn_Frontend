@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REVAMP TBN</title>
+    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="../assets/logo 1.svg" type="image/x-icon" />
+  </head>
+  <body class="font-popins">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+    >
+      <div class="flex items-center justify-between">
+        <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
+          <a href="../src/home.html"
+            ><img src="../assets/logo nav.svg" alt="logo navbar"
+          /></a>
+        </span>
+
+        <div class="lg:flex hidden gap-6 mt-2 mb-2 mr-5">
+          <ul
+            class="hidden mt-2 item-center space-x-10 lg:mr-20 text-gray-400 font-semibold tracking-wide md:flex"
+          >
+            <a href="../src/home.html"><li>Home</li></a>
+            <a href="../src/about.html"><li>About Us</li></a>
+            <a href="../src/event.html"><li>Event</li></a>
+            <a href="../src/blog.html"><li>Blog</li></a>
+            <a href="../src/contact.html"><li>Contact Us</li></a>
+          </ul>
+
+          <a
+            href="../src/login.html"
+            class="border-2 px-8 py-2 rounded-lg font-bold font-xs text-white bg-hijau"
+            >JOIN US</a
+          >
+        </div>
+        <button class="w-16 lg:hidden block buttonToogle">
+          <img src="../assets/menu1.svg" alt="Menu" />
+        </button>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="Mobilemenu hidden">
+        <ul class="text-sm font-bold gap-6 bg-background z-10">
+          <a href="../src/home.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300 z-10"
+            >
+              Home
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              About Us
+            </li></a
+          >
+          <a href="../src/event.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/event.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/blog.html"
+            ><li
+              class="py-4 px-6 ml-4 md:ml-0 lg:px-20 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Blog
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Contact Us
+            </li></a
+          >
+        </ul>
+
+        <div class="gap-6 mt-2 mb-2">
+          <a href="login.html">
+            <button
+              class="border px-1 py-3 rounded-md font-bold font-xs bg-hijau w-full"
+            >
+              LOGIN
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Background Blog -->
+    <section
+      id="home"
+      class="bg-[url('../assets/bg-blog.svg')] bg-cover bg-center relative md:w-full h-[500px] md:h-[550px]"
+    >
+      <div
+        class="max-w-[1200px] min-h-[100vh] flex flex-col justify-center mx-auto text-white items-center"
+      >
+        <div class="w-full md:w-[1000px] mt-[375px]">
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-2xl shadow-md"
+                >
+                  <img
+                    src="../assets/banner-blog1.jpg"
+                    alt="Image 1"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/banner-blog2.svg"
+                    alt="Image 2"
+                    class="object-cover h-full w-full"
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div
+                  class="w-[390px] md:w-full h-[200px] md:h-[350px] overflow-hidden bg-white rounded-lg shadow-md"
+                >
+                  <img
+                    src="../assets/banner-blog3.svg"
+                    alt="Image 3"
+                    class="object-cover w-full h-full"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Background Blog -->
+
+    <!-- TOP ARTICLES -->
+    <section class="mt-[300px]">
+      <h1>TOP ARTICLES</h1>
+      <div
+        class="flex flex-row justify-center items-center text-center mx-auto"
+      >
+        <div>
+          <img
+            src="../assets/blog-article1.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20 rounded-2xl"
+          />
+          <h1
+            class="text-black text-[27px] font-semibold font-popins w-[350px] ml-24"
+          >
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <h1 class="text-[20px] font-normal text-black w-[350px] ml-24">
+            Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.
+          </h1>
+          <img src="../assets/blog-line.svg" alt="" />
+          <span>Fidhia Kemala • 07 September 2023</span>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+        <div>
+          <img
+            src="../assets/blog-article2.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20"
+          />
+          <h1>
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <span
+            >Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.</span
+          >
+          <img src="../assets/blog-line.svg" alt="" />
+          <span>Fidhia Kemala • 07 September 2023</span>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+        <div>
+          <img
+            src="../assets/blog-article3.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20"
+          />
+          <h1>
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <span
+            >Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.</span
+          >
+          <img src="../assets/blog-line.svg" alt="" />
+          <span>Fidhia Kemala • 07 September 2023</span>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+      </div>
+
+      <!-- Garis 2 -->
+      <div
+        class="flex flex-row justify-center items-center text-center mx-auto mt-10"
+      >
+        <div>
+          <img
+            src="../assets/blog-article4.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20"
+          />
+          <h1>
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <span
+            >Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.</span
+          >
+          <img src="../assets/blog-line.svg" alt="" />
+          <h1>Fidhia Kemala • 07 September 2023</h1>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+        <div>
+          <img
+            src="../assets/blog-article5.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20"
+          />
+          <h1>
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <span
+            >Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.</span
+          >
+          <img src="../assets/blog-line.svg" alt="" />
+          <h1>Fidhia Kemala • 07 September 2023</h1>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+        <div>
+          <img
+            src="../assets/blog-article6.svg"
+            alt=""
+            class="w-[377px] h-[444px] ml-20"
+          />
+          <h1>
+            Fakta Tuberkulosis (TBC), Infeksi Penyebab Kematian Nomor 1 di
+            Indonesia
+          </h1>
+          <span
+            >Berbagai fakta penting seputar TBC di Indonesia yang bisa membantu
+            Anda menjadi lebih waspada terhadap penyakit yang satu ini.</span
+          >
+          <img src="../assets/blog-line.svg" alt="" />
+          <h1>Fidhia Kemala • 07 September 2023</h1>
+          <a href=""><button>READ MORE</button></a>
+        </div>
+      </div>
+    </section>
+    <!-- END TOP ARTICLES -->
+
+    <!-- FOOTER -->
+    <!-- <section class="bg-white mt-10">
+      <div class="flex flex-col md:flex-row md:p-10 justify-between">
+        <div class="w-full md:w-[400px] mb-5 md:mb-0">
+          <img src="../assets/logo footer.svg" alt="" />
+          <p
+            class="text-[14px] md:text-base font-semibold leading-normal text-justify my-3 font-popins mr-3"
+          >
+            TBN Alliance adalah jaringan global wirausaha yang berorientasi pada
+            tujuan, investor dampak, dan pembangun kapasitas yang mengambil
+            pendekatan kewirausahaan untuk mengentaskan kemiskinan di masyarakat
+            berpenghasilan rendah dan kurang terlayani.
+          </p>
+        </div>
+
+        <div class="flex flex-col mt-5">
+          <h1 class="text-[21px] md:text-lg font-semibold font-popins">
+            LOKASI
+          </h1>
+          <p
+            class="text-[18px] md:text-base font-normal font-popins mt-3 md:mt-5"
+          >
+            Jl. M.H.Thamrin No.20, Menteng
+          </p>
+          <p class="text-[18px] md:text-base font-normal font-popins">
+            Jakarta Pusat 10350, Indonesia
+          </p>
+        </div>
+
+        <div>
+          <h1
+            class="font-popins font font-semibold text-[21px] md:text-lg mt-2"
+          >
+            Perusahaan
+          </h1>
+          <div
+            class="flex flex-col font-popins font-normal text-[18px] md:text-base mt-3 md:mt-5"
+          >
+            <a href="about.html">About Us</a>
+            <a href="blog.html" class="py-2">Blog</a>
+            <a href="contact.html">Contact</a>
+          </div>
+        </div>
+
+        <div>
+          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+            Ikuti Social Media Kami
+          </h1>
+          <div class="flex gap-3 md:gap-[20px] py-5">
+            <a href="https://www.instagram.com/tbn.indonesia/"
+              ><img src="../assets/nav-instagram.svg" alt=""
+            /></a>
+            <a href="https://www.youtube.com/@tbnindonesia902"
+              ><img src="../assets/nav-youtube.svg" alt=""
+            /></a>
+            <a href=""><img src="../assets/nav-whatsapp.svg" alt="" /></a>
+            <a href=""><img src="../assets/nav-gmail.svg" alt="" /></a>
+            <a href=""><img src="../assets/nav-link.svg" alt="" /></a>
+          </div>
+          <h1 class="font-popins font-semibold text-[21px] md:text-lg">
+            Hubungi Kami
+          </h1>
+          <div class="flex gap-1 mt-2">
+            <img
+              src="../assets/icon email.svg"
+              class="font-popins font-normal text-[17px]"
+              alt=""
+            />
+            <a href="">hello@tbnalliance.org</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-biru">
+        <h1
+          class="justify-center items-center text-center p-5 text-white w-[380px] md:w-full text-[16px] font-bold"
+        >
+          Copyright © 2023 - Transformational Business Network (TBN) Alliance -
+          All rights reserved.
+        </h1>
+      </div>
+    </section> -->
+
+    <!-- END FOOTR -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/scrollnavbar.js"></script>
+    <script src="../js/humberger.js"></script>
+    <script src="../js/caraousel.js"></script>
+  </body>
+</html>

@@ -9,7 +9,7 @@ module.exports = {
         biru: "#25396F",
       },
       fontFamily: {
-        popins: ["Poppins"],
+        popins: ["Poppins, sans-serif"],
       },
     },
   },
