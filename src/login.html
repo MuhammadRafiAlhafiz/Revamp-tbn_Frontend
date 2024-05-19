@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-theme="light" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -119,12 +119,13 @@
             >
             <input
               type="text"
-              id="full_name"
-              name="full_name"
+              id="Email"
+              name="Email"
+              placeholder="Masukan Email anda"
               class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[450px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
             />
           </div>
-          <div class="mb-4 relative">
+          <div class="mb-4">
             <label
               for="password"
               class="block text-sm font-medium text-gray-700"
@@ -135,31 +136,25 @@
                 type="password"
                 id="password"
                 name="password"
-                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full md:w-[450px] p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+                placeholder="Masukan password anda"
+                class="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full p-2 shadow-sm sm:text-sm border-gray-600 border-2 rounded-md"
+                required
               />
-              <!-- Password toggle button -->
               <button
                 type="button"
-                onclick="togglePassword()"
-                class="absolute inset-y-0 right-0 flex items-center pr-2 focus:outline-none"
+                onclick="togglePasswordVisibility()"
+                class="absolute inset-y-0 right-0 flex items-center pr-3"
               >
                 <svg
+                  id="password-visibility-icon"
                   class="h-5 w-5 text-gray-400"
                   fill="none"
                   viewBox="0 0 24 24"
                   stroke="currentColor"
                 >
+                  <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                   <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
-                  />
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 14l9-5-9-5-9 5 9 5z"
+                    d="M2.458 12C3.732 7.943 7.512 5 12 5c4.489 0 8.268 2.943 9.542 7-.805 2.09-2.3 3.87-4.316 4.95M12 17c-2.588 0-4.856-.94-6.316-2.518"
                   />
                 </svg>
               </button>
@@ -175,7 +170,9 @@
             <label for="remember_me" class="ml-2 block text-sm text-gray-900"
               >Remember me</label
             >
-            <a href="" class="ml-auto text-hijau">Forget Password</a>
+            <a href="forgotpassword.html" class="ml-auto text-hijau"
+              >Forget Password</a
+            >
           </div>
           <button
             class="border rounded-lg p-2 mt-2 bg-hijau text-white font-popins"
@@ -189,22 +186,20 @@
           <p class="flex justify-center items-center text-gray-400">
             or login with
           </p>
-          <div class="flex mt-5 justify-between">
-            <img
-              src="../assets/google.svg"
-              class="border py-2 px-10 rounded-lg border-hijau"
-              alt=""
-            />
-            <img
-              src="../assets/Facbook-login.svg"
-              class="border py-2 px-10 rounded-lg border-hijau"
-              alt=""
-            />
-            <img
-              src="../assets/apple.svg"
-              class="border py-2 px-10 rounded-lg border-hijau"
-              alt=""
-            />
+          <div class="flex mt-5 justify-center gap-10">
+            <a href="emailconfirm.html"
+              ><img
+                src="../assets/google.svg"
+                class="border py-2 px-10 rounded-2xl border-hijau"
+                alt=""
+            /></a>
+
+            <a href="emailconfirm.html"
+              ><img
+                src="../assets/apple.svg"
+                class="border py-2 px-10 rounded-2xl border-hijau"
+                alt=""
+            /></a>
           </div>
         </div>
       </div>
@@ -254,5 +249,26 @@
     <!-- END LOGIN -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="../js/caraousel.js"></script>
+    <script>
+      function togglePasswordVisibility() {
+        const passwordInput = document.getElementById("password");
+        const passwordVisibilityIcon = document.getElementById(
+          "password-visibility-icon"
+        );
+        if (passwordInput.type === "password") {
+          passwordInput.type = "text";
+          passwordVisibilityIcon.setAttribute(
+            "d",
+            "M12 4.5C7.5 4.5 4 7.833 2.25 12c1.75 4.167 5.25 7.5 9.75 7.5s8-3.333 9.75-7.5C20 7.833 16.5 4.5 12 4.5zm0 9.5a2 2 0 110-4 2 2 0 010 4z"
+          );
+        } else {
+          passwordInput.type = "password";
+          passwordVisibilityIcon.setAttribute(
+            "d",
+            "M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+          );
+        }
+      }
+    </script>
   </body>
 </html>

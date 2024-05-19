@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html data-theme="light" lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME PAGE</title>
+    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <link rel="shortcut icon" href="../assets/logo 1.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body class="font-popins">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+    >
+      <div class="flex items-center justify-between">
+        <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
+          <a href="../src/home.html"
+            ><img src="../assets/logo nav.svg" alt="logo navbar"
+          /></a>
+        </span>
+
+        <div class="lg:flex hidden gap-6 mt-2 mb-2 mr-5">
+          <ul
+            class="hidden mt-2 item-center space-x-10 lg:mr-20 text-white font-semibold tracking-wide md:flex"
+          >
+            <a href="../src/home.html"><li>Home</li></a>
+            <a href="../src/about.html"><li>About Us</li></a>
+            <a href="../src/event.html"><li>Event</li></a>
+            <a href="../src/blog.html"><li>Blog</li></a>
+            <a href="../src/contact.html"><li>Contact Us</li></a>
+          </ul>
+
+          <a
+            href="../src/login.html"
+            class="border-2 px-8 py-2 rounded-lg font-bold font-xs text-hijau border-hijau"
+            >JOIN US</a
+          >
+        </div>
+        <button class="w-16 lg:hidden block buttonToogle">
+          <img src="../assets/menu1.svg" alt="Menu" />
+        </button>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="Mobilemenu hidden">
+        <ul class="text-sm font-bold gap-6 bg-background z-10">
+          <a href="../src/home.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300 z-10"
+            >
+              Home
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              About Us
+            </li></a
+          >
+          <a href="../src/event.html"
+            ><li
+              class="py-4 px-6 ml-4 md:ml-0 lg:px-20 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/blog.html"
+            ><li
+              class="py-4 px-6 ml-4 md:ml-0 lg:px-20 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Blog
+            </li></a
+          >
+          <a href="../src/contact.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Contact Us
+            </li></a
+          >
+        </ul>
+
+        <div class="gap-6 mt-2 mb-2">
+          <a href="login.html">
+            <button
+              class="border px-1 py-3 rounded-md font-bold font-xs bg-hijau w-full"
+            >
+              LOGIN
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var navbar = document.getElementById("navbar");
+        if (window.scrollY > 0) {
+          navbar.classList.add("bg-blues");
+        } else {
+          navbar.classList.remove("bg-blues");
+        }
+      });
+    </script>
+    <!-- HOME PAGE -->
+    <section
+      id="home"
+      class="bg-[url('../assets/bg-blog-upaya.svg')] bg-cover bg-center absolute h-full w-full"
+    >
+      <div
+        class="max-w-[1150px] min-h-[100vh] flex flex-col justify-center mx-auto px-4 text-white"
+      >
+        <h1 class="text-[30px] md:text-[56px] font-bold w-[1216px] mt-16">
+          Upaya Pemerintah Mengatasi Kemiskinan di Indonesia
+        </h1>
+      </div>
+      <div>
+        <span>
+          <p>
+            Kemiskinan merupakan suatu topik yang terus dan selalu
+            diperbincangkan sampai saat ini, sebagai indikator tolak ukur
+            mengenai bagaimana tingkat kesejahteraan dan kemakmuran pada
+            kehidupan masyarakat di suatu negara. Fenomena mengenai kemiskinan
+            hampir terjadi diseluruh negara yang sedang berkembang. pada
+            kategori negara maju, kemiskinan hampir tidak terlihat atau
+            jumlahnya sedikit dikarenakan sumber daya manusia di negara tersebut
+            telah berkembang dan memiliki kehidupan yang sejahtera. dampak yang
+            akan diperoleh dari kemiskinan tersebut ialah Kondisi yang
+            menyebabkan menurunnya kualitas sumber daya manusia sehingga
+            produktivitas dan pendapatan yang didapatkan rendah. Oleh karena itu
+            dengan penghasilan yang rendah, masyarakatnya tidak mampu mengakses
+            sarana pendidikan, kesehatan, dan nutrisi secara baik sehingga
+            menyebabkan kualitas sumberdaya manusia dari aspek intelektual dan
+            fisik rendah serta akibatnya produktivitas juga rendah. Pembangunan
+            ekonomi yang dilaksanakan sejak kemerdekaan secara signifikan telah
+            berhasil mengurangi jumlah dan proporsi penduduk miskin di
+            Indonesia. Apapun penyebabnya persoalan kemiskinan tetap menjadi
+            masalah besar yang perlu mendapat perhatian dan tindakan langsung
+            melalui pelaksanaan program-program baik yang bersifat penyelamatan,
+            pemberdayaan maupun fasilitatif.
+          </p>
+        </span>
+        <div></div>
+      </div>
+    </section>
+    <!-- END HOME PAGE -->
+  </body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>REVAMP TBN</title>
+    <link rel="stylesheet" href="../dist/tailwind.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="shortcut icon" href="../assets/logo 1.svg" type="image/x-icon" />
+  </head>
+  <body class="font-popins">
+    <!-- NAVBAR -->
+    <nav
+      id="navbar"
+      class="px-8 py-2 md:py-1 fixed w-full font-jakarta z-50 shadow-lg backdrop-blur-lg bg-biru"
+    >
+      <div class="flex items-center justify-between">
+        <span class="flex items-center space-x-2 md:ml-10 py-1 z-10 md:py-0">
+          <a href="../src/home.html"
+            ><img src="../assets/logo nav.svg" alt="logo navbar"
+          /></a>
+        </span>
+
+        <div class="lg:flex hidden gap-6 mt-2 mb-2 mr-5">
+          <ul
+            class="hidden mt-2 item-center space-x-10 lg:mr-20 text-white font-semibold tracking-wide md:flex"
+          >
+            <a href="../src/home.html"><li>Home</li></a>
+            <a href="../src/about.html"><li>About Us</li></a>
+            <a href="../src/event.html"><li>Event</li></a>
+            <a href="../src/blog.html"><li>Blog</li></a>
+            <a href="../src/contact.html"><li>Contact Us</li></a>
+          </ul>
+
+          <a
+            href="../src/login.html"
+            class="border-2 px-8 py-2 rounded-lg font-bold font-xs text-white bg-hijau"
+            >JOIN US</a
+          >
+        </div>
+        <button class="w-16 lg:hidden block buttonToogle">
+          <img src="../assets/menu1.svg" alt="Menu" />
+        </button>
+      </div>
+      <!-- MOBILE MENU -->
+      <div class="Mobilemenu hidden">
+        <ul class="text-sm font-bold gap-6 bg-background z-10">
+          <a href="../src/home.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300 z-10"
+            >
+              Home
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              About Us
+            </li></a
+          >
+          <a href="../src/event.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/event.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Event
+            </li></a
+          >
+          <a href="../src/blog.html"
+            ><li
+              class="py-4 px-6 ml-4 md:ml-0 lg:px-20 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Blog
+            </li></a
+          >
+          <a href="../src/about.html"
+            ><li
+              class="py-4 px-10 cursor-pointer hover:bg-white ease-in duration-300"
+            >
+              Contact Us
+            </li></a
+          >
+        </ul>
+
+        <div class="gap-6 mt-2 mb-2">
+          <a href="login.html">
+            <button
+              class="border px-1 py-3 rounded-md font-bold font-xs bg-hijau w-full"
+            >
+              LOGIN
+            </button>
+          </a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Open the modal using ID.showModal() method -->
+    <button class="btn mt-36" onclick="my_modal_1.showModal()">
+      open modal
+    </button>
+    <dialog id="my_modal_1" class="modal">
+      <div class="modal-box bg-black">
+        <h3 class="font-bold text-lg">Hello!</h3>
+        <p class="py-4">Press ESC key or click the button below to close</p>
+        <div class="modal-action">
+          <form method="dialog">
+            <!-- if there is a button in form, it will close the modal -->
+            <button class="btn">Close</button>
+          </form>
+        </div>
+      </div>
+    </dialog>
+  </body>
+</html>
